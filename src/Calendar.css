@@ -1,0 +1,119 @@
+body {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.calendar 
+{
+    box-sizing: border-box;
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+.calendar .calendar-header 
+{
+    background-color: rgb(102, 193, 255);
+    text-align: center;
+    min-height: 2rem;
+    line-height: 2rem;
+    color: rgb(58, 58, 58);
+    font-family: "AirbnbCerealBook", sans-serif;
+    font-weight: 700;
+    display: flex;
+}
+
+.calendar .day-names 
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.calendar .calendar-body 
+{
+    border: 1px solid rgb(102, 193, 255);
+}
+
+.calendar .calendar-header .previous 
+{
+    flex: 1;
+    text-align: left;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.calendar .calendar-header .next 
+{
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.calendar .week 
+{
+    background-color: white;
+    width: calc(100% / 7);
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+}
+.calendar .week div 
+{
+    width: 100%;
+}
+
+.calendar .day 
+{
+    position: relative;
+    width: calc(100% / 7);
+    height: 50px;
+    display: inline-block;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar .day div 
+{
+    width: 44px;
+    height: 44px;
+    position: relative;
+    color: rgb(58, 58, 58);
+    z-index: 100;
+    line-height: 44px;
+}
+
+.calendar .day div.before 
+{
+    color: rgb(205, 205, 205);
+}
+
+.calendar .day div.selected 
+{
+    background-color: lightblue;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.calendar .day div.today 
+{
+    background-color: rgb(205, 205, 205);
+}
