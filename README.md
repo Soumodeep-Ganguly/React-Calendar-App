@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Calendar Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is hosted in [Calendar App](http://calender.rf.gd/).
 
 ## Available Scripts
 
