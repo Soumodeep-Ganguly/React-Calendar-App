@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+.calendar-body {
+    position: 'absolute';
+    margin: auto;
+}
+
 .calendar 
 {
     box-sizing: border-box;
@@ -116,4 +121,18 @@ body {
 .calendar .day div.today 
 {
     background-color: rgb(205, 205, 205);
+}
+
+@media screen and (max-width:900) {
+    .calendar {
+        width: '80%';
+    }
+}
+
+@media screen and (max-width:600) {
+    .calendar {
+        width: '100%';
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

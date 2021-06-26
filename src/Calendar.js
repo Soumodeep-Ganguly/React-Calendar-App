@@ -71,7 +71,7 @@ const Calendar = () => {
     }
 
     return (
-        <div style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}>
+        <div className="calendar-body">
             <div className="calendar">
                 <div className="calendar-header">
                     <div className="previous" onClick={() => !thisMonth() && setValue(prevMonth())}>
